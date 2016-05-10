@@ -47,9 +47,6 @@ var (
 )
 
 func init() {
-	//flag.BoolVar(&isChild, "continue", false, "listen on open fd (after forking)")
-	//flag.StringVar(&socketOrder, "socketorder", "", "previous initialization order - used when more than one listener was started")
-
 	runningServerReg = sync.RWMutex{}
 	runningServers = make(map[string]*endlessServer)
 	runningServersOrder = []string{}
